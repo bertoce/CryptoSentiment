@@ -1,0 +1,76 @@
+
+/* 1. Base */
+html {
+  background-color: #fff;
+  background-image: linear-gradient(to bottom right, #FCE38A, #F38181);
+  color: #fff;
+  font-family: "Circular", sans-serif;
+  font-size: 16px;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 2;
+  min-height: 100vh;
+  min-width: 300px;
+  overflow-x: hidden;
+  text-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.wallpaper {
+  background-image: url("../images/waves.jpg");
+  background-position: center;
+  opacity: .3;
+  position: fixed;
+}
+
+.wallpaper {
+  display: block;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  position: relative;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.name {
+    font-weight: 1000;
+    font-size: 1.5rem;
+}
+
+input[type=text] {
+    font-size: 2rem;
+    width: 130px;
+    height: 50px;
+    border-radius: 8px;
+    margin: auto;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* When the input field gets focus, change its width to 30% */
+input[type=text]:focus {
+    width: 70%;
+
+/* 4. Responsiveness */
+
+@media screen and (max-width: 799px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 3rem;
+}
+  .side {
+    margin-bottom: 3rem;
+    width: 100%;
+} }
+
